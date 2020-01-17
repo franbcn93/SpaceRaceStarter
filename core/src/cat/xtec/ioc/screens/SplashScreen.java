@@ -66,7 +66,12 @@ public class SplashScreen implements Screen {
         //TODO Exercici 2.2 Creem la imatge de la nau i li assignem el moviment en horitzontal
         Image spacecraft = new Image(AssetManager.caraCuinerStraight);
         float y = Settings.GAME_HEIGHT / 2 + textLbl.getHeight();
-        spacecraft.addAction(Actions.repeat(RepeatAction.FOREVER, Actions.sequence(Actions.moveTo(0 - spacecraft.getWidth(), y), Actions.moveTo(Settings.GAME_WIDTH, y, 5))));
+        spacecraft.addAction(Actions.repeat(RepeatAction.FOREVER, Actions.sequence(Actions.scaleTo(0.7f,0.7f),
+        Actions.moveTo(0 - spacecraft.getWidth(), y),Actions.moveTo(Settings.GAME_WIDTH + spacecraft.getWidth(),
+        y,1.4f), Actions.rotateBy(-90),
+                Actions.moveTo(Settings.GAME_WIDTH-19,Settings.GAME_HEIGHT+spacecraft.getHeight()),
+                Actions.moveTo(Settings.GAME_WIDTH-19, 0-spacecraft.getHeight(), 1.5f),
+                Actions.rotateTo(360))));
 
         stage.addActor(spacecraft);
 

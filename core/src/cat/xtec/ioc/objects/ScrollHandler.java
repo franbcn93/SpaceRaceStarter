@@ -133,7 +133,7 @@ public class ScrollHandler extends Group {
     // TODO Exercici 3 -4.1 - Per veure si capturem la moneda blava
     public boolean isCapturedCoinBlue(Spacecraft nau){
         if(getCoinBlue().captureCoinBlue(nau)){
-            getCoinBlue().reset(Settings.GAME_WIDTH);
+            getCoinBlue().reset(Settings.GAME_WIDTH*3);
             return  true;
         }
         //Comprovem si

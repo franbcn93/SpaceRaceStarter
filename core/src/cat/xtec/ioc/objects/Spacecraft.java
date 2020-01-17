@@ -65,6 +65,8 @@ public class Spacecraft extends Actor {
                 }
                 break;
             case SPACECRAFT_STRAIGHT:
+//                this.position.x = Settings.SPACECRAFT_WIDTH/0.2f;
+//                this.position.y = Settings.SPACECRAFT_HEIGHT/0.2f;
                 break;
         }
 

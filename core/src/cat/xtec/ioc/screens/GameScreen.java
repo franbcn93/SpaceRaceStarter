@@ -315,7 +315,15 @@ public class GameScreen implements Screen {
         container.addAction(Actions.sequence(Actions.scaleTo(1.5f, 1.5f, 0.3f, Interpolation.linear), Actions.scaleTo(1, 1, 0.3f, Interpolation.linear)));
         stage.addActor(container);
         //Emitim un so quan això passa
-        AssetManager.coinSound.play();
+//        AssetManager.coinSound2.play();
+        if (punts == 100) {
+            AssetManager.coinSound2.play();
+        }
+        else{
+            AssetManager.coinSound.play();
+        }
+
+
     }
 
     private void updateGameOver(float delta) {

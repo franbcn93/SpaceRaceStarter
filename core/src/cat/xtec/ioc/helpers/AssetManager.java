@@ -37,7 +37,7 @@ public class AssetManager {
     //Moneda
     public static TextureRegion coins;
     public static TextureRegion coins_blue;
-    public static Sound coinSound;
+    public static Sound coinSound, coinSound2;
 
     // Font
     public static BitmapFont font;
@@ -119,6 +119,7 @@ public class AssetManager {
         // TODO Exercici 3 - 4.2
         //CoinSound
         coinSound = Gdx.audio.newSound(Gdx.files.internal("sounds/coin.wav"));
+        coinSound2 = Gdx.audio.newSound(Gdx.files.internal("sounds/laser-shot.wav"));
 
         /******************************* Text *************************************/
         // Font space
@@ -140,6 +141,7 @@ public class AssetManager {
         music.dispose();
         // TODO Exercici 3 -4.2
         coinSound.dispose();
+        coinSound2.dispose();
         sheetExercici.dispose();
 
 
